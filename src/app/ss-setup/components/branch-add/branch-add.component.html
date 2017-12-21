@@ -1,0 +1,31 @@
+<form id="smart-form-register" class="smart-form">
+  <header>
+    Add new branch here
+  </header>
+  <fieldset>
+    <section>
+      <label class="input">
+        <input type="text" name="brancName" placeholder="Branch Name" [(ngModel)]="branch.branchName"/>
+      </label>
+    </section>
+    <section>
+      <label class="input">
+        <input type="text" name="companyName" placeholder="Company Name" [(ngModel)]="branch.companyName"/>
+      </label>
+    </section>
+    <section>
+      <label class="input">
+        <input type="text" name="districtName" placeholder="District Name" [(ngModel)]="branch.districtName"/>
+      </label>
+    </section>
+    <section>
+      <label class="input">
+        <input type="text" name="regionName" placeholder="Region Name" [(ngModel)]="branch.regionName" />
+      </label>
+    </section>
+  </fieldset><footer>
+    <button type="button" class="btn btn-primary" (click)="addBranch()">
+      Done
+    </button>
+  </footer>
+</form>
